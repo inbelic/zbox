@@ -1,0 +1,8 @@
+Loading with vkb:
+
+vk.BaseWrapperWithCustomDispatch(vk.BaseDispatch){ .dispatch = vk.BaseDispatch{ .vkCreateInstance = fn (*const vk.InstanceCreateInfo, ?*const vk.AllocationCallbacks, *vk.Instance) callconv(.c) vk.Result@7f81fd012e00, .vkGetInstanceProcAddr = fn (vk.Instance, [*:0]const u8) callconv(.c) ?*const fn () callconv(.c) void@7f81fd005660, .vkEnumerateInstanceVersion = fn (*u32) callconv(.c) vk.Result@7f81fd010920, .vkEnumerateInstanceLayerProperties = fn (*u32, ?[*]vk.LayerProperties) callconv(.c) vk.Result@7f81fd010600, .vkEnumerateInstanceExtensionProperties = fn (?[*:0]const u8, *u32, ?[*]vk.ExtensionProperties) callconv(.c) vk.Result@7f81fd0102d0 } }
+
+Segmentation fault at address 0x0
+???:?:?: 0x0 in ??? (???)
+run
+└─ run zbox failure
